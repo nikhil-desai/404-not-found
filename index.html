@@ -28,13 +28,13 @@
     <style>
       body {
         font-family: "Space Mono", monospace;
-        font-size: 18px;
+        font-style: normal;
+        font-size: 24px;
       }
       header {
         font-family: "Inconsolata", monospace;
-        font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 25px;
         letter-spacing: -0.08em;
         text-transform: uppercase;
@@ -43,49 +43,94 @@
       footer {
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
-        font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
         text-align: center;
         color: #bdbdbd;
+        margin-top: 280px;
       }
       button {
-        width: 216px;
-        height: 68px;
         background: #333333;
         color: #ffffff;
         letter-spacing: -0.035em;
         text-transform: uppercase;
-        font-family: "Space Mono";
-        font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
+        padding: 24px 43px;
+        margin: 36px 0px;
       }
       a {
         font-style: bold;
         color: #bdbdbd;
       }
       h1 {
-        font-style: normal;
         font-weight: bold;
         font-size: 64px;
         line-height: 95px;
         letter-spacing: -0.035em;
         color: #333333;
+        width: 120%;
       }
-      h4 {
+      h2 {
+        padding: 40px 77px;
+      }
+      h3 {
         color: #4f4f4f;
-        font-family: Space Mono;
-        font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 36px;
         letter-spacing: -0.035em;
+        padding: 36px 0px;
+        width: 70%;
       }
-      .container {
-        display: flex;
+      img {
+        width: 540px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-center {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+      .grid-column {
+        padding: 0px 90px;
+      }
+      @media all and (max-width: 480px) {
+        header {
+          font-size: 12px;
+        }
+        footer {
+          margin-top: 0px;
+          font-size: 12px;
+        }
+        button {
+          padding: 30px 0px;
+        }
+        h1 {
+          font-size: 42px;
+          width: 100%;
+        }
+        h2 {
+          padding: 20px 24px;
+        }
+        h3 {
+          font-size: 18px;
+          padding: 30px 0px;
+        }
+        img {
+          width: 286px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .grid-column {
+          padding: 0px 24px;
+        }
       }
     </style>
   </head>
@@ -93,16 +138,16 @@
     <header>
       <h2>404 Not Found</h2>
     </header>
-    <div class="container">
-      <div>
+    <div class="grid">
+      <div class="grid-center">
         <img src="Scarecrow.png" alt="Scarecrow" />
       </div>
-      <div>
+      <div class="grid-column">
         <h1>I have bad news for you</h1>
-        <h4>
+        <h3>
           The page you are looking for might be removed or is temporarily
           unavailable
-        </h4>
+        </h3>
         <button>Back to Homepage</button>
       </div>
     </div>
