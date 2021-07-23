@@ -16,8 +16,10 @@
       href="https://devchallenges.io/"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;600&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -25,71 +27,90 @@
 
     <style>
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: "Space Mono", monospace;
+        font-size: 18px;
       }
-
-      ul {
-        padding-left: 24px;
+      header {
+        font-family: "Inconsolata", monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: #333333;
       }
-
-      li {
-        margin-bottom: 8px;
+      footer {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #bdbdbd;
       }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      button {
+        width: 216px;
+        height: 68px;
+        background: #333333;
+        color: #ffffff;
+        letter-spacing: -0.035em;
+        text-transform: uppercase;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
       }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      a {
+        font-style: bold;
+        color: #bdbdbd;
       }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        color: #333333;
       }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      h4 {
+        color: #4f4f4f;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
       }
-
-      .welcome-text a {
-        color: #f7542e;
+      .container {
+        display: flex;
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <header>
+      <h2>404 Not Found</h2>
+    </header>
+    <div class="container">
+      <div>
+        <img src="Scarecrow.png" alt="Scarecrow" />
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div>
+        <h1>I have bad news for you</h1>
+        <h4>
+          The page you are looking for might be removed or is temporarily
+          unavailable
+        </h4>
+        <button>Back to Homepage</button>
+      </div>
     </div>
+    <footer>
+      <p>
+        created by <a href="https://nikhildesigns.com"><b>nikhil-desai</b></a> -
+        devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>
